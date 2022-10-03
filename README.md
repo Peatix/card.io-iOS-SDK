@@ -343,3 +343,6 @@ Include a method to cancel card scanning:
 **Notes for SPM implementation**
 * lipo "libopencv_imgproc.a" -thin arm64 -output "Frameworks/libopencv_imgproc.a"
 * xcodebuild -create-xcframework -library "Frameworks/libopencv_imgproc.a" -headers "CardIO.h" -output "Frameworks/libopencv_imgproc.xcframework"
+
+
+* xcodebuild -create-xcframework -library "Frameworks/libCardIO86.a" -library "Frameworks/libCardIO64.a" -headers "CardIO.h" -output "Frameworks/libCardIO.xcframework"
